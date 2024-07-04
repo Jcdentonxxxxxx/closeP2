@@ -35,16 +35,28 @@ body {
 main {    
     position: relative;
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     z-index: 100;
 }
 
 .wrapper {    
+    display: -webkit-box;    
+    display: -ms-flexbox;    
     display: flex;
-    justify-content: center;
-    align-items: center;    
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;    
     width: 100%;    
     max-width: 1920px;
     min-height: 100vh;
@@ -58,6 +70,7 @@ main {
     height: 560px;    
     top: -163px;
     left: -192px;
+    background-image: -o-radial-gradient(center, circle farthest-side, rgba(0, 128, 0, 0.3) 0%, rgba(0, 128, 0, 0.3) 19%, transparent 100%);
     background-image: radial-gradient(circle farthest-side at center, rgba(0, 128, 0, 0.3) 0%, rgba(0, 128, 0, 0.3) 19%, transparent 100%);
     z-index: 1000;
 }
@@ -68,6 +81,7 @@ main {
     height: 600px;
     bottom: -200px;    
     left: -230px;
+    background-image: -o-radial-gradient(center, circle farthest-side, rgba(0, 128, 0, 0.3) 0%, rgba(0, 128, 0, 0.3) 19%, transparent 100%);
     background-image: radial-gradient(circle farthest-side at center, rgba(0, 128, 0, 0.3) 0%, rgba(0, 128, 0, 0.3) 19%, transparent 100%);
     z-index: 999;
 }
@@ -78,6 +92,7 @@ main {
     height: 600px;    
     top: -200px;
     right: -150px;
+    background-image: -o-radial-gradient(center, circle farthest-side, rgba(72, 74, 215, 0.3) 0%, rgba(72, 74, 215, 0.3) 19%, transparent 100%);
     background-image: radial-gradient(circle farthest-side at center, rgba(72, 74, 215, 0.3) 0%, rgba(72, 74, 215, 0.3) 19%, transparent 100%);
     z-index: 1000;
 }
@@ -88,6 +103,7 @@ main {
     height: 800px;    
     bottom: -250px;
     right: -200px;
+    background-image: -o-radial-gradient(center, circle farthest-side, rgba(72, 74, 215, 0.3) 0%, rgba(72, 74, 215, 0.3) 12%, transparent 90%);
     background-image: radial-gradient(circle farthest-side at center, rgba(72, 74, 215, 0.3) 0%, rgba(72, 74, 215, 0.3) 12%, transparent 90%);
     z-index: 999;
 }
@@ -145,10 +161,19 @@ main {
     width: 100%;
     max-width: 1168px;
     padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: relative;    
 }
 
@@ -179,9 +204,15 @@ main {
 
 .logo {
     z-index: 1000;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 64px;
     position: relative;
 }
@@ -254,16 +285,25 @@ main {
     font-size: 24px;
     line-height: 28.8px;
     text-transform: uppercase;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
     transition: all ease 0.3s;
     z-index: 1000;
     min-height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .button:hover {
-    box-shadow: 0 0 20px 1px rgb(12, 117, 56);
+    -webkit-box-shadow: 0 0 20px 1px rgb(12, 117, 56);
+            box-shadow: 0 0 20px 1px rgb(12, 117, 56);
 }
 
 
@@ -422,6 +462,5 @@ main {
         }
     }
 }
-
 
 
